@@ -5,39 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.js" integrity="sha512-pI9ULUuweUZijeb7ZP4Uue1MA8ok0Cj564FUTEUikdtPJTTh6yv79Yi2x4BSyAdfDAIn3UkKb853txvG9QZqFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.js"
+      integrity="sha512-pI9ULUuweUZijeb7ZP4Uue1MA8ok0Cj564FUTEUikdtPJTTh6yv79Yi2x4BSyAdfDAIn3UkKb853txvG9QZqFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="city">
         <option value="">Select City</option>
-        <option value="">Tokyo</option>
-        <option value="">New York</option>
-        <option value="">Toronto</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="America/New_York">New York</option>
+        <option value="America/Toronto">Toronto</option>
       </select>
 
-      <div class="city" id = "dubai">
-        <div>
-          <h2>Dubai 🕌</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="dubai">
+          <div>
+            <h2>Dubai 🕌</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
 
-       <div class="city" id="vancouver">
-        <div>
-          <h2>Vancouver 🍁</h2>
-          <div class="date"></div>
+        <div class="city" id="vancouver">
+          <div>
+            <h2>Vancouver 🍁</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
     </div>
-    </div>
-
-    
 
     <footer>
       This project was coded by <strong>Bayina Dadon</strong> and is
